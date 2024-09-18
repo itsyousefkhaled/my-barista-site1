@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وظائف</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ماستر بريستا عصام أبو اليزيد - وظائف</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="#">الوظائف</a></li>
+                <li><a href="training.html">تدريب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>أحدث الوظائف المتاحة</h2>
+        <p>هنا يمكنك الاطلاع على أحدث فرص العمل في مجال الباريستا.</p>
+
+        <!-- خانة إضافة وظيفة جديدة -->
+        <div class="job-form">
+            <h3>أضف وظيفة جديدة</h3>
+            <form id="jobForm">
+                <label for="companyName">اسم الشركة:</label>
+                <input type="text" id="companyName" name="companyName" required><br>
+
+                <label for="jobTitle">المسمى الوظيفي:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required><br>
+
+                <label for="location">الموقع:</label>
+                <input type="text" id="location" name="location" required><br>
+
+                <label for="description">وصف الوظيفة:</label>
+                <textarea id="description" name="description" required></textarea><br>
+
+                <button type="submit">إضافة الوظيفة</button>
+            </form>
+        </div>
+
+        <!-- مكان عرض الوظائف المضافة -->
+        <div class="job-list">
+            <h3>الوظائف المتاحة</h3>
+            <ul id="jobList">
+                <!-- ستظهر الوظائف هنا بعد الإضافة -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ماستر بريستا عصام أبو اليزيد. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
